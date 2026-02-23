@@ -1,6 +1,7 @@
 FROM runpod/worker-comfyui:5.2.0-base
 
 RUN apt-get update && apt-get install -y git wget ffmpeg && \
+    pip install "numpy>=2.0.0" && \
     git clone https://github.com/kijai/ComfyUI-WanVideoWrapper \
         /comfyui/custom_nodes/ComfyUI-WanVideoWrapper && \
     cd /comfyui/custom_nodes/ComfyUI-WanVideoWrapper && \
