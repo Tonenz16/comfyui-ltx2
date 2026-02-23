@@ -1,4 +1,4 @@
-FROM runpod/worker-comfyui:latest
+FROM runpod/worker-comfyui:3.1.0-base
 
 # Installa ComfyUI-WanVideoWrapper
 RUN cd /comfyui/custom_nodes && \
