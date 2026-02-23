@@ -1,9 +1,7 @@
 name: Build and Push Docker
-
 on:
   push:
     branches: [ main ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,3 +19,4 @@ jobs:
         with:
           push: true
           tags: tonenz16/comfyui-ltx2:latest
+          no-cache: true
